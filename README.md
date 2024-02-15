@@ -1,50 +1,76 @@
-# Codio Activity 2.1: Continuous Uniform Distributions
+# Overview: Univariate Distributions
 
-**Expected Time = 45 minutes**
+- [Scipy stats](#Scipy-stats)
+- [Continuous uniform distribution](#Continuous-uniform-distribution)
+- [Code numpy continous uniform distribution](#Code-numpy-continous-uniform-distribution)
+- [Codio Activity 2.1: Continuous Uniform Distributions](#Codio-Activity-2.1:-Continuous-Uniform-Distributions)
+    - [Problem 1: Creating a Distribution Object](#Problem-1:-Creating-a-Distribution-Object)
+    - [Problem 2: Descriptive Statistics of Distribution](#Problem-2:-Descriptive-Statistics-of-Distribution)
+    - [Problem 3: Plotting the Distribution](#Problem-3:-Plotting-the-Distribution)
+    - [Problem 4: Evaluating Probabilities](#Problem-4:-Evaluating-Probabilities)
+    - [Problem 5: Cumulative Probabilities](#Problem-5:-Cumulative-Probabilities)
 
-**Total Points = 10**
+# Codio Activity 2.2: Gaussian Distributions
 
-**Learning Outcome Addressed:**
-2. Create and interpret visual plots, including probability density functions, histograms, scatter plots, pair plots, and correlation matrices
+- [Problem 1: Creating a Gaussian Distribution Object](#Problem-1:-Creating-a-Gaussian-Distribution-Object)
+- [Problem 2: Random Samples from Distribution](#Problem-2:-Random-Samples-from-Distribution)
+- [Problem 3: Statistics of Sample](#Problem-3:-Statistics-of-Sample)
+- [Problem 4: Plotting the Distribution and Sample](#Problem-4:-Plotting-the-Distribution-and-Sample)
 
+# Codio Activity 2.3: The Law of Large Numbers
 
+- [Problem 1: A Uniform Distribution](#Problem-1:-A-Uniform-Distribution)
+- [Problem 2: Loop of Samples](#Problem-2:-Loop-of-Samples)
+- [Problem 3: Comparing the sample means to actual](#Problem-3:-Comparing-the-sample-means-to-actual)
+- [Problem 4: Distribution of Sample Means](#Problem-4:-Distribution-of-Sample-Means)
+- [Problem 5: Repeat with Gaussian Distribution](#Problem-5:-Repeat-with-Gaussian-Distribution)
 
-## Overview
+# Overview: Multivariate Distributions
 
-This activity focuses on creating and visualizing continuous probability distributions using scipy.stats. You will get practice creating uniform distribution objects, examining their summary statistics (mean, variance, standard deviation), and visualizing the distribution using matplotlib.
+- [Codio Activity 2.4: Measures of Center and Spread](#Codio-Activity-2.4:-Measures-of-Center-and-Spread)
+    - [Problem 1: Load the Data](#Problem-1:-Load-the-Data)
+    - [Problem 2: Base Salary Distribution Mean](#Problem-2:-Base-Salary-Distribution-Mean)
+    - [Problem 3: Base Salary Distribution Median](#Problem-3:-Base-Salary-Distribution-Median)
+    - [Problem 4: Determining Quartiles](#Problem-4:-Determining-Quartiles)
+    - [Problem 5: Interquartile Range](#Problem-5:-Interquartile-Range)
+    - [Problem 6: Rule for Outliers](#Problem-6:-Rule-for-Outliers)
+    - [Problem 7: Dropping Outliers](#Problem-7:-Dropping-Outliers)
+    - [Problem 8: Finding the Mean with no Outliers](#Problem-8:-Finding-the-Mean-with-no-Outliers)
+    - [Problem 9: Finding the Median with no Outliers](#Problem-9:-Finding-the-Median-with-no-Outliers)
+    - [Problem 10: Standard Deviation with numpy](#Problem-10:-Standard-Deviation-with-numpy)
+    - [Problem 11: Standard Deviation with pandas](#Problem-11:-Standard-Deviation-with-pandas)
+    - [Problem 12: Measure of Center](#Problem-12:-Measure-of-Center)
+    - [Problem 13: Measure of Spread](#Problem-13:-Measure-of-Spread)
 
+# Codio Activity 2.5: Plotting Multivariate Datasets
 
+- [Problem 1: Load the Data](#Problem-1:-Load-the-Data)
+- [Problem 2: Features for Histogram](#Problem-2:-Features-for-Histogram)
+- [Problem 3: Histogram of Life Expectancy](#Problem-3:-Histogram-of-Life-Expectancy)
+- [Problem 4: Adding a title and human readable label](#Problem-4:-Adding-a-title-and-human-readable-label)
+- [Problem 5: Histogram of GDP](#Problem-5:-Histogram-of-GDP)
+- [Problem 6: Customizing the Histogram](#Problem-6:-Customizing-the-Histogram)
+- [Problem 7: Scatterplot of GDP vs. Life Expectancy](#Problem-7:-Scatterplot-of-GDP-vs.-Life-Expectancy)
+- [Problem 8: Logarithmic Transformation](#Problem-8:-Logarithmic-Transformation)
+- [Problem 9: pandas histogram](#Problem-9:-pandas-histogram)
+- [Problem 10: pandas scatterplot](#Problem-10:-pandas-scatterplot)
 
-**Remember to run your code from each cell before submitting your activity.** Running your code beforehand will notify  you of errors and  give you a chance to fix your errors 
-before submitting. 
+# Pandas covariance correlations and introduction to Seaborn
 
-### How do I open the activity?
- To view the activity, click on the file `Coding_Activity_2.1.ipynb` in the panel on the left.
+- [Codio Activity 2.6: Computing the Sample Covariance Matrix](#Codio-Activity-2.6:-Computing-the-Sample-Covariance-Matrix)
+    - [Problem 1: Calculating Covariance](#Problem-1:-Calculating-Covariance)
+    - [Problem 2: Calculating Correlation](#Problem-2:-Calculating-Correlation)
+    - [Problem 3: Heatmap of Covariance](#Problem-3:-Heatmap-of-Covariance)
+    - [Problem 4: Heatmap of Correlation](#Problem-4:-Heatmap-of-Correlation)
+    - [Problem 5: Strongest Positive Correlation](#Problem-5:-Strongest-Positive-Correlation)
+    - [Problem 6: Interpreting negative correlation](#Problem-6:-Interpreting-negative-correlation)
 
-### How do I answer questions?
+# Codio Activity 2.7: Approximating Correlation from scatterplots
 
-Throughout the activity, you will find code cells that start with:
-`### GRADED
+- [Approximating Correlation from scatterplots Problem 1](#Approximating-Correlation-from-scatterplots-Problem-1)
+- [Approximating Correlation from scatterplots Problem 2](#Approximating-Correlation-from-scatterplots-Problem-2)
+- [Approximating Correlation from scatterplots Problem 3](#Approximating-Correlation-from-scatterplots-Problem-3)
+- [Approximating Correlation from scatterplots Problem 4](#Approximating-Correlation-from-scatterplots-Problem-4)
+- [Approximating Correlation from scatterplots Problem 5](#Approximating-Correlation-from-scatterplots-Problem-5)
 
-This is a *graded* cell. In this cell, you will find the variables you will need to use to answer the questions initialized to `None`. 
-
-Below, you will see the following code:
-
-`raise NotImplementedError()`
-
-If you get this error, delete the code "raise NotImplementedError()" and enter your solution to the question.
-
-You will also see that every `### GRADED` is followed by an empty code cell. These are *autograded* cells. These cells contain the code that it's  used to check your answer.  Therefore, these cells are locked from your view.
-
-To make sure your answer is recorded by the autograder, run **both** the graded and the autograded cells. You can do so by clicking  `shift` + `return` on your keyboard.
-
-
-### How do I submit an activity?
-
-Once you have completed the activity, save the Jupyter Notebook file by clicking the save button in the Jupyter Notebook window. Once saved, you can submit it for grading and feedback by clicking on “Education” in the menu bar at the top of the browser window and then selecting "Mark as completed". Once you mark it as complete, the autograder will grade your submission and will take you back to your dashboard. If the results are not shown in your dashboard, refresh the page and they should appear.
-
-If you decide to go back and edit some of your answers (perhaps because you did not get full points), there are two options for doing this:
-1.	From the dashboard, the activity should notate it has been graded. When you open the activity, Codio will give you the option of seeing your results or you can ‘reset assignment’. Resetting the assignment will remove all previous work and allow you to complete the assignment again.
-2.	If you are already in the assignment, you can click on “Education” in the top menu bar, and then select ‘Reset Assignment’.
-
-**IMPORTANT NOTE:** If you have trouble with the steps above, please try to reload your activity by closing the Jupyter Notebook and by reopening it using the panel on the left. Do not hesitate to contact your Program Support or your Learning Facilitator!
+# Glossary
