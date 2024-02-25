@@ -1,13 +1,13 @@
 # Fundamentals of Machine Learning
 
-Welcome to the Fundamentals of Machine Learning repository! Here, we'll delve into the essential concepts and techniques of machine learning, starting from univariate distributions to multivariate datasets and pandas operations.
+Welcome to the Fundamentals of Machine Learning project! In this project, we will embark on a journey to explore the core concepts and techniques that lay the groundwork for understanding machine learning algorithms and their applications.
 
 ## Table of Contents
 
 - Overview: Univariate Distributions
     - Scipy stats
     - Continuous uniform distribution
-    - Code numpy continuous uniform distribution
+    - Code numpy continous uniform distribution
     - Codio Activity 2.1: Continuous Uniform Distributions
         - Problem 1: Creating a Distribution Object
         - Problem 2: Descriptive Statistics of Distribution
@@ -44,7 +44,7 @@ Welcome to the Fundamentals of Machine Learning repository! Here, we'll delve in
         - Problem 1: Load the Data
         - Problem 2: Features for Histogram
         - Problem 3: Histogram of Life Expectancy
-        - Problem 4: Adding a title and human-readable label
+        - Problem 4: Adding a title and human readable label
         - Problem 5: Histogram of GDP
         - Problem 6: Customizing the Histogram
         - Problem 7: Scatterplot of GDP vs. Life Expectancy
@@ -68,15 +68,21 @@ Welcome to the Fundamentals of Machine Learning repository! Here, we'll delve in
 - Glossary
 
 ## Overview
+Welcome to the Fundamentals of Machine Learning project! In this project, we will embark on a journey to explore the core concepts and techniques that lay the groundwork for understanding machine learning algorithms and their applications.
 
-This section provides an introduction to univariate distributions, covering concepts such as scipy stats, continuous uniform distribution, and practical coding activities to reinforce your understanding.
+### Overview: Univariate Distributions
+Univariate distributions are fundamental to understanding probability theory and statistical analysis. In this section, we explore various univariate distributions, including the continuous uniform distribution and Gaussian distributions. Through coding activities, you'll learn how to create, analyze, and visualize these distributions using Python libraries like NumPy and SciPy.
 
-## Multivariate Distributions
+### Codio Activity 2.2: Gaussian Distributions
+Gaussian distributions, also known as normal distributions, are ubiquitous in probability theory and statistics. In this activity, we delve into Gaussian distributions, covering topics such as creating distribution objects, generating random samples, computing statistics, and plotting distributions and samples. Through hands-on coding exercises, you'll gain a deeper understanding of Gaussian distributions and their properties.
 
-Explore multivariate distributions, including measures of center and spread, plotting multivariate datasets, and computing sample covariance matrix. Engage in hands-on activities to apply these concepts to real-world datasets.
+### Codio Activity 2.3: The Law of Large Numbers
+The Law of Large Numbers is a fundamental concept in probability theory, stating that the average of a large number of independent and identically distributed random variables approaches the expected value as the sample size grows. In this activity, we explore the Law of Large Numbers through experiments with uniform and Gaussian distributions. By analyzing sample means and distributions, you'll gain insights into the principles of probability and statistical inference.
 
-## Pandas Covariance, Correlations, and Introduction to Seaborn
+### Overview: Multivariate Distributions
+Multivariate distributions extend the concepts of univariate distributions to multiple variables. In this section, we cover measures of center and spread for multivariate datasets, including mean, median, quartiles, interquartile range, and standard deviation. Through coding activities, you'll learn how to compute and visualize these measures using Python libraries like NumPy and pandas.
 
-Learn about pandas operations related to covariance, correlations, and introduction to Seaborn for visualization. Dive into practical coding activities to analyze and interpret multivariate datasets effectively.
+### Pandas covariance correlations and introduction to Seaborn
+In this section, we explore covariance, correlation, and their applications in data analysis using pandas and seaborn. Through coding activities, you'll learn how to compute sample covariance matrices, correlation matrices, and visualize them using heatmaps. Additionally, you'll gain insights into approximating correlation from scatterplots, enhancing your ability to analyze relationships between variables in multivariate datasets.
 
-Get ready to embark on a journey into the fundamentals of machine learning with us!
+Embark on this exciting journey into the fundamentals of machine learning, and equip yourself with the knowledge and skills to tackle real-world data analysis challenges!
